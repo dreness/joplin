@@ -194,7 +194,7 @@ if [[ $GIT_TAG_NAME = v* ]]; then
 		# It can be removed once we upgrade to electron-builder@23, however we
 		# cannot currently do this due to this error:
 		# https://github.com/laurent22/joplin/issues/8149
-		PYTHON_PATH=$(which python) USE_HARD_LINKS=false yarn run dist
+		PYTHON_PATH=$(which python2) USE_HARD_LINKS=false yarn run dist
 	else
 		USE_HARD_LINKS=false yarn run dist
 	fi	

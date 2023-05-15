@@ -7,7 +7,7 @@ module.exports = {
 		'<rootDir>/node_modules/',
 		'<rootDir>/rnInjectedJs/',
 		'<rootDir>/vendor/',
-        '<rootDir>/services/searchengine/SearchFilter',
+		'<rootDir>/services/searchengine/SearchFilter',
 	],
 
 	testEnvironment: 'node',

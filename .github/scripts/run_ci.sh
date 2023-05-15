@@ -207,7 +207,7 @@ else
 	
 	if [ "$IS_MACOS" == "1" ]; then
 		# See above why we need to specify Python
-		PYTHON_PATH=$(which python) USE_HARD_LINKS=false yarn run dist --publish=never
+		PYTHON_PATH=$(which python2) USE_HARD_LINKS=false yarn run dist --publish=never
 	else
 		USE_HARD_LINKS=false yarn run dist --publish=never
 	fi

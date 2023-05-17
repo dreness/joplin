@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   pre_job:
     if: github.repository == 'dreness/joplin'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     outputs:
       should_skip: ${{ steps.skip_check.outputs.should_skip }}
     steps:
